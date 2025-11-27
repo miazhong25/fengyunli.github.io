@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FENGYUNLI HOUSEHOLD PRODUCTS</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        header, footer { background-color: #3498db; color: white; text-align: center; padding: 20px; }
+        nav { display: flex; justify-content: center; background-color: #f5f5f5; padding: 10px; }
+        nav a { margin: 0 15px; text-decoration: none; color: #3498db; font-weight: bold; }
+        .hero { background: url('https://via.placeholder.com/1600x400') no-repeat center center / cover; height: 400px; color: white; display: flex; align-items: center; justify-content: center; text-shadow: 2px 2px 4px rgba(0,0,0,0.7); }
+        .product-grid { display: flex; flex-wrap: wrap; gap: 20px; padding: 20px; justify-content: center; }
+        .product-card { width: 250px; border: 1px solid #ddd; padding: 15px; background: white; text-align: center; }
+        .product-card img { width: 100%; height: auto; }
+        .about-us, .contact-us { padding: 20px; text-align: center; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to FENGYUNLI HOUSEHOLD PRODUCTS</h1>
+    <p>Your Reliable Partner for Custom Household Products</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+    <a href="faq.html">FAQ</a>
+</nav>
+
+<div class="hero">
+    <div>
+        <h2>Innovative Home & Kitchen Solutions</h2>
+        <p>Custom T-Shirts • Hoodies • Sportswear</p>
+    </div>
+</div>
+
+<div class="product-grid">
+    <!-- Example Product Card -->
+    <div class="product-card">
+        <img src="https://via.placeholder.com/250x250" alt="Custom T-Shirt">
+        <h3>Custom T-Shirt</h3>
+        <p>• 100% Cotton<br>• Screen Printing / DTG<br>• MOQ: 50 pcs<br>• Sizes: S-XXL (Custom)</p>
+    </div>
+    <!-- Repeat above block for each product -->
+</div>
+
+<div class="about-us">
+    <h2>About Us</h2>
+    <p>Founded in 2020 and based in Dongguan, China, we specialize in high-quality custom household products for global markets.</p>
+</div>
+
+<div class="contact-us">
+    <h2>Contact Us</h2>
+    <p>Mia Zhong - Export Manager<br>Email: miazhong@fengyunli.store<br>WhatsApp/Tel: +1 (562) 571-0885</p>
+</div>
+
+<footer>
+    <p>&copy; 2025 FENGYUNLI HOUSEHOLD PRODUCTS, LTD. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
