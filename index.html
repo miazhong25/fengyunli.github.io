@@ -2,50 +2,58 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>FENGYUNLI STORE</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FENGYUNLI STORE - Home</title>
   <style>
-    body { font-family: Arial, sans-serif; padding: 40px; background: #f9f9f9; }
-    h1 { color: #2c3e50; }
-    .contact { margin-top: 30px; }
-    input, textarea, button {
-      width: 100%; max-width: 500px; padding: 10px; margin: 8px 0;
-      border: 1px solid #ccc; border-radius: 4px;
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      line-height: 1.6;
     }
-    button { background: #3498db; color: white; cursor: pointer; }
+    nav {
+      background-color: #0077cc;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-bottom: 2rem;
+    }
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1 { color: #0077cc; }
   </style>
 </head>
 <body>
-  <h1>Welcome to FENGYUNLI STORE</h1>
-  <p>We supply high-quality custom apparel for global customers.</p>
 
-  <div class="contact">
-    <h2>Contact Us</h2>
-    <form action="https://tally.so/r/wvPqKj" method="GET" target="_blank">
-      <input type="text" name="name" placeholder="Your Name *" required />
-      <input type="email" name="email" placeholder="Your Email *" required />
-      <input type="text" name="country" placeholder="Country" />
-      <textarea name="message" placeholder="Product you're interested in..." rows="4"></textarea>
-      <button type="submit">Send Inquiry</button>
-    </form>
-  </div>
-</body><section style="margin: 40px 0; text-align: center;">
-  <h2>Our Products</h2>
-  <p>We offer custom T-shirts, hoodies, and sportswear for wholesale.</p>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="faq.html">FAQ</a>
+  </nav>
 
-  <div style="display: flex; gap: 20px; justify-content: center; margin-top: 20px;">
-    <div style="border: 1px solid #ddd; padding: 10px; width: 200px;">
-      <img src="https://via.placeholder.com/200x200" alt="T-Shirt" style="width: 100%; height: auto;" />
-      <p><strong>T-Shirt</strong></p>
-    </div>
-    <div style="border: 1px solid #ddd; padding: 10px; width: 200px;">
-      <img src="https://via.placeholder.com/200x200" alt="Hoodie" style="width: 100%; height: auto;" />
-      <p><strong>Hoodie</strong></p>
-    </div>
-    <div style="border: 1px solid #ddd; padding: 10px; width: 200px;">
-      <img src="https://via.placeholder.com/200x200" alt="Sportswear" style="width: 100%; height: auto;" />
-      <p><strong>Sportswear</strong></p>
-    </div>
+  <div class="container">
+    <h1>Welcome to FENGYUNLI STORE</h1>
+    <p>We supply high-quality custom apparel for global customers, including T-shirts, hoodies, sportswear, and more.</p>
+    <p>Wholesale & OEM/ODM services available. Contact us today!</p>
   </div>
-</section>
+
+</body>
 </html>
