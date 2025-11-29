@@ -190,3 +190,8 @@ body {
   padding: 1.5rem 0;
   text-align: center;
 }
+/* 新增：增加主内容区段落间距 */
+main p {
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+}
