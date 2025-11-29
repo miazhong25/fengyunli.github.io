@@ -3,79 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="FENGYUNLI STORE – Manufacturer of clothes hangers, home furnishings, and OEM services in Dongguan, China." />
-  <title>FENGYUNLI STORE | Factory & Export</title>
-  <link rel="stylesheet" href="css/style-minimal.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Inter', sans-serif;
-      color: #1a1a1a;
-      background-color: #f8f9fa;
-      line-height: 1.6;
-    }
-    .navbar {
-      background-color: #1a1a1a;
-      color: white;
-      padding: 1rem 0;
-    }
-    .navbar ul {
-      display: flex;
-      gap: 2rem;
-      list-style: none;
-    }
-    .btn {
-      background-color: #2c3e50;
-      color: white;
-      border: none;
-      padding: 0.75rem 1.5rem;
-      border-radius: 4px;
-      cursor: pointer;
-      transition: background-color 0.3s;
-    }
-    .btn:hover {
-      background-color: #1a2530;
-    }
-    .btn-outline {
-      background: transparent;
-      color: #2c3e50;
-      border: 1px solid #2c3e50;
-      padding: 0.75rem 1.5rem;
-    }
-    .btn-outline:hover {
-      background-color: #2c3e50;
-      color: white;
-    }
-    .hero {
-      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/banner1.jpg') center/cover no-repeat;
-      color: white;
-      text-align: center;
-      padding: 10rem 1rem;
-    }
-    .hero h1 {
-      font-size: 3rem;
-      margin-bottom: 1rem;
-    }
-    .hero p {
-      font-size: 1.2rem;
-      max-width: 800px;
-      margin: 0 auto 2rem;
-    }
-    .feature-card {
-      background: white;
-      border: 1px solid #ddd;
-      padding: 1.5rem;
-      margin-bottom: 1rem;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
-    footer {
-      background: #1a1a1a;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
-    }
-  </style>
+  <meta name="description" content="FENGYUNLI – Professional manufacturer of eco-friendly clothes hangers and home furnishings in Dongguan, China." />
+  <title>FENGYUNLI | Clothes Hangers & Home Furnishings</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -83,48 +14,51 @@
   <nav class="navbar">
     <div class="container">
       <a href="index.html" class="logo">FENGYUNLI</a>
-      <ul>
-        <li><a href="index.html">Home</a></li>
+      <ul class="nav-menu">
         <li><a href="products-en.html">Products</a></li>
         <li><a href="about-en.html">About</a></li>
         <li><a href="contact-en.html">Contact</a></li>
-        <li><a href="ja.html">日本語</a></li>
+        <li><a href="ja.html" class="lang-switch">JA</a></li>
       </ul>
     </div>
   </nav>
 
   <!-- Hero Section -->
   <section class="hero">
-    <h1>Welcome to FENGYUNLI STORE</h1>
-    <p>We manufacture high-quality clothes hangers, home furnishings, and offer OEM/ODM services from Dongguan, China.</p>
-    <div class="btn-group">
-      <a href="products-en.html" class="btn">View Products</a>
-      <a href="contact-en.html" class="btn btn-outline">Get a Quote</a>
+    <div class="hero-content">
+      <h1>Eco-Friendly<br>Clothes Hangers &<br>Home Furnishings</h1>
+      <p>Manufactured in Dongguan, China — serving global brands with sustainable, custom solutions.</p>
+      <div class="cta-buttons">
+        <a href="products-en.html" class="btn btn-primary">View Products</a>
+        <a href="contact-en.html" class="btn btn-outline">Request Quote</a>
+      </div>
     </div>
   </section>
 
-  <!-- Features -->
-  <section class="features">
-    <div class="feature-card">
+  <!-- Product Categories -->
+  <section class="categories">
+    <div class="category-card">
       <h3>Clothes Hangers</h3>
-      <p>Plastic, wood, metal – custom designs available.</p>
-      <a href="products-en.html#clothes-hangers" class="btn-small">Learn More</a>
+      <p>Cardboard, plastic, wood, metal — customizable for retail & e-commerce.</p>
+      <a href="products-en.html#clothes-hangers" class="link-arrow">Explore →</a>
     </div>
-    <div class="feature-card">
+    <div class="category-card">
       <h3>Home Furnishings</h3>
-      <p>Elegant decorative items for living rooms and bedrooms.</p>
-      <a href="products-en.html#home-furnishings" class="btn-small">Learn More</a>
+      <p>Vases, trays, storage boxes — minimalist design for modern living.</p>
+      <a href="products-en.html#home-furnishings" class="link-arrow">Explore →</a>
     </div>
-    <div class="feature-card">
-      <h3>Warehousing & Shipping</h3>
-      <p>Low-cost storage, repackaging, and global shipping.</p>
-      <a href="contact-en.html" class="btn-small">Get a Quote</a>
+    <div class="category-card">
+      <h3>OEM Services</h3>
+      <p>Custom packaging, branding, and logistics support worldwide.</p>
+      <a href="contact-en.html" class="link-arrow">Contact Us →</a>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 FENGYUNLI STORE. All rights reserved.</p>
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 FENGYUNLI. All rights reserved.</p>
+    </div>
   </footer>
 
 </body>
