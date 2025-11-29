@@ -3,94 +3,78 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FENGYUNLI STORE - 製品</title>
+  <meta name="description" content="FENGYUNLI 製品 – プラスチックハンガー、木製ハンガー、装飾花瓶、倉庫サービス。" />
+  <title>FENGYUNLI | 製品</title>
   <link rel="stylesheet" href="css/style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <style>body { font-family: "Noto Sans JP", sans-serif; }</style>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
+  <!-- Navigation -->
   <nav class="navbar">
-    <div class="nav-container">
+    <div class="container">
       <a href="ja.html" class="logo">FENGYUNLI</a>
       <ul class="nav-menu">
-        <li><a href="ja.html" class="nav-link">ホーム</a></li>
-        <li><a href="products-ja.html" class="nav-link">製品</a></li>
-        <li><a href="about-ja.html" class="nav-link">会社概要</a></li>
-        <li><a href="contact-ja.html" class="nav-link">お問い合わせ</a></li>
-        <li><a href="products-en.html" class="nav-link lang-switch">English</a></li>
+        <li><a href="products-ja.html">製品</a></li>
+        <li><a href="about-ja.html">会社概要</a></li>
+        <li><a href="contact-ja.html">お問い合わせ</a></li>
+        <li><a href="index.html" class="lang-switch">English</a></li>
       </ul>
-      <div class="hamburger">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </div>
     </div>
   </nav>
 
-  <section class="products-section">
-    <h1>私たちの製品</h1>
+  <!-- Main Content -->
+  <main class="products-page">
+    <div class="container">
+      <h1>私たちの製品</h1>
 
-    <!-- 衣架 -->
-    <div id="clothes-hangers" class="product-category">
-      <h2>ハンガー</h2>
-      <div class="product-grid">
-        <div class="product-card">
-          <img src="images/product1.jpg" alt="プラスチックハンガー" />
+      <!-- Clothes Hangers -->
+      <section id="clothes-hangers">
+        <h2>ハンガー</h2>
+        <div class="product-item">
+          <img src="images/plastic-hanger.jpg" alt="Plastic Hanger" width="100">
           <h3>プラスチックハンガー</h3>
-          <p>衣料品店向けの軽量で耐久性のあるプラスチックハンガー。</p>
-          <p class="price">1個あたり $1.20</p>
-          <div class="payment-links">
-            <a href="https://www.paypal.com/donate?business=YOUR_PAYPAL_EMAIL&item_name=Clothes_Hanger&currency_code=USD" target="_blank" class="btn-paypal">PayPalで支払い</a>
-            <a href="https://your-bank-transfer-link.com" target="_blank" class="btn-bank">銀行振込</a>
-          </div>
+          <p>軽量で耐久性のあるプラスチックハンガー、衣料品店向け。</p>
+          <p>¥150 / 個</p>
+          <a href="#" class="btn btn-small">PayPal銀行振込で支払う</a>
         </div>
-        <div class="product-card">
-          <img src="images/product2.jpg" alt="木製ハンガー" />
+        <div class="product-item">
+          <img src="images/wooden-hanger.jpg" alt="Wooden Hanger" width="100">
           <h3>木製ハンガー</h3>
-          <p>滑り止め加工付きの天然木ハンガー。環境に優しい。</p>
-          <p class="price">1個あたり $2.50</p>
-          <div class="payment-links">
-            <a href="https://www.paypal.com/donate?business=YOUR_PAYPAL_EMAIL&item_name=Wooden_Hanger&currency_code=USD" target="_blank" class="btn-paypal">PayPalで支払い</a>
-            <a href="https://your-bank-transfer-link.com" target="_blank" class="btn-bank">銀行振込</a>
-          </div>
+          <p>滑り止め加工付き天然木ハンガー、環境に優しい。</p>
+          <p>¥350 / 個</p>
+          <a href="#" class="btn btn-small">PayPal銀行振込で支払う</a>
         </div>
-      </div>
-    </div>
+      </section>
 
-    <!-- 家居用品 -->
-    <div id="home-furnishings" class="product-category">
-      <h2>インテリア雑貨</h2>
-      <div class="product-grid">
-        <div class="product-card">
-          <img src="images/product3.jpg" alt="装飾用花瓶" />
-          <h3>装飾用花瓶</h3>
-          <p>リビングルームの装飾に最適なエレガントな陶器製花瓶。</p>
-          <p class="price">1個あたり $8.99</p>
-          <div class="payment-links">
-            <a href="https://www.paypal.com/donate?business=YOUR_PAYPAL_EMAIL&item_name=Decorative_Vase&currency_code=USD" target="_blank" class="btn-paypal">PayPalで支払い</a>
-            <a href="https://your-bank-transfer-link.com" target="_blank" class="btn-bank">銀行振込</a>
-          </div>
+      <!-- Home Furnishings -->
+      <section id="home-furnishings">
+        <h2>インテリア雑貨</h2>
+        <div class="product-item">
+          <img src="images/decorative-vase.jpg" alt="Decorative Vase" width="100">
+          <h3>装飾花瓶</h3>
+          <p>リビングルーム向けの洗練されたセラミック花瓶。</p>
+          <p>¥1,200 / 個</p>
+          <a href="#" class="btn btn-small">PayPal銀行振込で支払う</a>
         </div>
-      </div>
-    </div>
+      </section>
 
-    <!-- 仓储服务 -->
-    <div id="warehousing" class="product-category">
-      <h2>倉庫保管サービス</h2>
-      <p>海外サプライヤー向けの低コスト保管・再梱包・国際配送サービス。</p>
-      <p><strong>月額料金：1立方メートルあたり $10</strong></p>
-      <div class="payment-links">
-        <a href="https://www.paypal.com/donate?business=YOUR_PAYPAL_EMAIL&item_name=Warehouse_Service&currency_code=USD" target="_blank" class="btn-paypal">PayPalで支払い</a>
-        <a href="https://your-bank-transfer-link.com" target="_blank" class="btn-bank">銀行振込</a>
-      </div>
+      <!-- Warehousing -->
+      <section>
+        <h2>倉庫サービス</h2>
+        <p>低コストの保管、再梱包、グローバル配送サービスを海外サプライヤー向けに提供。</p>
+        <p><strong>月額料金：1立方メートルあたり ¥1,500</strong></p>
+        <a href="contact-ja.html" class="btn btn-small">PayPal銀行振込で支払う</a>
+      </section>
     </div>
-  </section>
+  </main>
 
+  <!-- Footer -->
   <footer class="footer">
-    <p>&copy; 2025 FENGYUNLI STORE. All rights reserved.</p>
+    <div class="container">
+      <p>&copy; 2025 FENGYUNLI. All rights reserved.</p>
+    </div>
   </footer>
 
-  <script src="js/main.js"></script>
 </body>
 </html>
