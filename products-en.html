@@ -2,100 +2,75 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="FENGYUNLI Products – Plastic hangers, wooden hangers, decorative vases, and warehousing services." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>FENGYUNLI | Products</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
-
-  <!-- Navigation -->
-  <nav class="navbar">
-    <div class="container">
-      <a href="index.html" class="logo">FENGYUNLI</a>
-      <ul class="nav-menu">
-        <li><a href="products-en.html">Products</a></li>
-        <li><a href="about-en.html">About</a></li>
-        <li><a href="contact-en.html">Contact</a></li>
-        <li><a href="ja.html" class="lang-switch">Japanese</a></li>
-      </ul>
-    </div>
-  </nav>
-
-  <!-- Main Content -->
-  <main class="products-page">
-    <div class="container">
-      <h1>Our Products</h1>
-
-      <!-- Clothes Hangers -->
-      <section id="clothes-hangers">
-        <h2>Clothes Hangers</h2>
-        <div class="product-item">
-          <img src="images/plastic-hanger.jpg" alt="Plastic Hanger" width="100">
-          <h3>Plastic Hanger</h3>
-          <p>Lightweight and durable plastic hangers for clothing stores.</p>
-          <p>$1.20 / piece</p>
-          <a href="#" class="btn btn-small">Pay with PayPal Bank Transfer</a>
-        </div>
-        <div class="product-item">
-          <img src="images/wooden-hanger.jpg" alt="Wooden Hanger" width="100">
-          <h3>Wooden Hanger</h3>
-          <p>Natural wood hangers with non-slip coating, eco-friendly.</p>
-          <p>$2.50 / piece</p>
-          <a href="#" class="btn btn-small">Pay with PayPal Bank Transfer</a>
-        </div>
-      </section>
-
-      <!-- Home Furnishings -->
-      <section id="home-furnishings">
-        <h2>Home Furnishings</h2>
-        <div class="product-item">
-          <img src="images/decorative-vase.jpg" alt="Decorative Vase" width="100">
-          <h3>Decorative Vase</h3>
-          <p>Elegant ceramic vase for living room decoration.</p>
-          <p>$8.99 / piece</p>
-          <a href="#" class="btn btn-small">Pay with PayPal Bank Transfer</a>
-        </div>
-      </section>
-
-      <!-- Warehousing -->
-      <section>
-        <h2>Warehousing Services</h2>
-        <p>Low-cost storage, repackaging, and global shipping for overseas suppliers.</p>
-        <p><strong>Monthly Fee: $10 per cubic meter</strong></p>
-        <a href="contact-en.html" class="btn btn-small">Pay with PayPal Bank Transfer</a>
-      </section>
-    </div>
-  </main>
-
-</div>
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; 2025 FENGYUNLI. All rights reserved.</p>
-    </div>
-  </footer>
-<!-- Scan to Connect Section -->
-<div style="text-align: center; margin: 30px 0; padding: 20px; background-color: #f9f9f9; border-radius: 8px;">
-  <h3 style="color: #333;">Scan to Connect</h3>
-  <div style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 40px; margin-top: 20px;">
-    <!-- WeChat QR -->
-    <div style="text-align: center;">
-      <img src="images/wechat_qr.png" alt="WeChat QR Code" width="150" height="150" style="border: 1px solid #ddd; border-radius: 8px;">
-      <p style="margin: 10px 0; font-size: 14px;"><strong>WeChat</strong><br>Add us on WeChat</p>
-    </div>
-
-    <!-- WhatsApp QR -->
-    <div style="text-align: center;">
-      <img src="images/whatsapp_qr.png" alt="WhatsApp QR Code" width="150" height="150" style="border: 1px solid #ddd; border-radius: 8px;">
-      <p style="margin: 10px 0; font-size: 14px;"><strong>WhatsApp</strong><br>Add us on WhatsApp</p>
-    </div>
-  </div>
-
-  <div style="margin-top: 20px; text-align: center; font-size: 14px; color: #666;">
-    <p>Simply scan the QR code to add our export manager and start your inquiry.</p>
-  </div>
-</div>
-</body>
-</html>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #f9f9f9;
+    }
+    header {
+      background: white;
+      padding: 1rem 2rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 2rem;
+    }
+    nav a {
+      text-decoration: none;
+      color: #000;
+      font-weight: 600;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 1.5rem;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: 2rem;
+    }
+    .categories {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+    .category-btn {
+      padding: 0.5rem 1.5rem;
+      background: #eee;
+      border: none;
+      cursor: pointer;
+      font-weight: 600;
+    }
+    .category-btn.active {
+      background: #000;
+      color: white;
+    }
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+    .product-card {
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+    .product-card:hover {
+      transform: translateY(-4px);
+    }
+    .product-img {
+      width: 100%;
+      height: 200px;
+      object-fit: contain;
+ 
