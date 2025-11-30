@@ -13,19 +13,27 @@
       background: #f9f9f9;
     }
     header {
-      background: white;
+      background: black; /* ✅ 修复：改为黑色 */
+      color: white;
       padding: 1rem 2rem;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
     }
     nav ul {
       display: flex;
       list-style: none;
       gap: 2rem;
+      align-items: center;
     }
     nav a {
       text-decoration: none;
-      color: #000;
+      color: white; /* ✅ 修复：文字白色 */
       font-weight: 600;
+    }
+    .logo {
+      font-size: 1.4rem;
+      font-weight: bold;
     }
     .container {
       max-width: 1200px;
@@ -133,6 +141,7 @@
       height: 120px;
       background: #333;
       margin-bottom: 0.5rem;
+      /* 如果图片加载失败，至少显示灰色块 */
     }
     footer {
       text-align: center;
@@ -152,8 +161,10 @@
 <header>
   <nav>
     <ul>
-      <li><a href="index.html">FENGYUNLI</a></li>
-      <li><a href="products-en.js">Products</a></li>
+      <li><a href="index.html" class="logo">FENGYUNLI</a></li>
+      <li><a href="products-en.html">Products</a></li> <!-- ✅ 修复：从 .js 改为 .html -->
+      <li><a href="sourcing-en.html">Sourcing</a></li>
+      <li><a href="warehousing-en.html">Warehousing</a></li>
       <li><a href="about-en.html">About</a></li>
       <li><a href="contact-en.html">Contact</a></li>
       <li><a href="ja.html">Japanese</a></li>
@@ -205,12 +216,12 @@
   <!-- 详情页（默认隐藏） -->
   <div id="product-detail" style="display:none;">
     <div id="detail-content"></div>
-    <a href="products-en.html" style="display:inline-block;margin-top:2rem;">← Back to Products</a>
+    <a href="products-en.html" style="display:inline-block;margin-top:2rem;color:#007bff;">← Back to Products</a>
   </div>
 </div>
 
-<!-- 保留你的二维码联系模块 -->
-div class="contact-section">
+<!-- ✅ 修复：补全 < 开头 -->
+<div class="contact-section">
   <h2>Scan to Connect</h2>
   <div class="qr-codes">
     <div class="qr-item">
