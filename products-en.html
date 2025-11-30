@@ -73,4 +73,228 @@
       width: 100%;
       height: 200px;
       object-fit: contain;
- 
+      background: #f5f5f5;
+      padding: 1rem;
+    }
+    .product-info {
+      padding: 1rem;
+    }
+    .product-title {
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+    .product-price {
+      font-weight: bold;
+      color: #d32f2f;
+    }
+    .product-detail {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1.5rem;
+    }
+    .detail-img {
+      width: 100%;
+      max-width: 400px;
+      margin: 1rem auto;
+      display: block;
+      object-fit: contain;
+    }
+    .pay-button {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.8rem 2rem;
+      background: #ffc439;
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 4px;
+    }
+    .contact-section {
+      background: #000;
+      color: white;
+      padding: 3rem 1.5rem;
+      margin-top: 4rem;
+    }
+    .contact-section h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .qr-codes {
+      display: flex;
+      justify-content: center;
+      gap: 3rem;
+      flex-wrap: wrap;
+    }
+    .qr-item {
+      text-align: center;
+    }
+    .qr-img {
+      width: 120px;
+      height: 120px;
+      background: #333;
+      margin-bottom: 0.5rem;
+    }
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background: #000;
+      color: #aaa;
+      font-size: 0.9rem;
+    }
+    @media (max-width: 600px) {
+      nav ul { flex-direction: column; gap: 1rem; }
+      .qr-codes { gap: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <ul>
+      <li><a href="index.html">FENGYUNLI</a></li>
+      <li><a href="products-en.js">Products</a></li>
+      <li><a href="about-en.html">About</a></li>
+      <li><a href="contact-en.html">Contact</a></li>
+      <li><a href="ja.html">Japanese</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="container">
+  <!-- 列表页：显示所有产品 -->
+  <div id="product-list">
+    <h1>Our Products</h1>
+
+    <div class="categories">
+      <button class="category-btn active" data-category="all">All</button>
+      <button class="category-btn" data-category="hangers">Clothes Hangers</button>
+      <button class="category-btn" data-category="home">Home Furnishings</button>
+    </div>
+
+    <div class="products-grid">
+      <!-- Plastic Hanger -->
+      <a href="?id=plastic-hanger" class="product-card">
+        <img src="images/plastic-hanger.jpg" alt="Plastic Hanger" class="product-img">
+        <div class="product-info">
+          <div class="product-title">Plastic Hanger</div>
+          <div class="product-price">$1.20 / piece</div>
+        </div>
+      </a>
+
+      <!-- Wooden Hanger -->
+      <a href="?id=wooden-hanger" class="product-card">
+        <img src="images/wooden-hanger.jpg" alt="Wooden Hanger" class="product-img">
+        <div class="product-info">
+          <div class="product-title">Wooden Hanger</div>
+          <div class="product-price">$2.50 / piece</div>
+        </div>
+      </a>
+
+      <!-- Decorative Vase -->
+      <a href="?id=vase" class="product-card">
+        <img src="images/vase.jpg" alt="Decorative Vase" class="product-img">
+        <div class="product-info">
+          <div class="product-title">Decorative Vase</div>
+          <div class="product-price">$8.99 / piece</div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <!-- 详情页（默认隐藏） -->
+  <div id="product-detail" style="display:none;">
+    <div id="detail-content"></div>
+    <a href="products-en.html" style="display:inline-block;margin-top:2rem;">← Back to Products</a>
+  </div>
+</div>
+
+<!-- 保留你的二维码联系模块 -->
+<div class="contact-section">
+  <h2>Scan to Connect</h2>
+  <div class="qr-codes">
+    <div class="qr-item">
+      <div class="qr-img"></div>
+      <p>WeChat<br>Add us on WeChat</p>
+    </div>
+    <div class="qr-item">
+      <div class="qr-img"></div>
+      <p>WhatsApp<br>Add us on WhatsApp</p>
+    </div>
+  </div>
+  <p style="text-align:center;margin-top:1.5rem;">
+    Simply scan the QR code to add our export manager and start your inquiry.
+  </p>
+</div>
+
+<footer>
+  © 2025 FENGYUNLI. All rights reserved.
+</footer>
+
+<script>
+  // 简易产品数据（实际项目可替换为 JSON 或 CMS）
+  const products = {
+    'plastic-hanger': {
+      title: 'Plastic Hanger',
+      image: 'images/plastic-hanger.jpg',
+      price: '$1.20 / piece',
+      description: 'Lightweight and durable plastic hangers for clothing stores. Ideal for retail and e-commerce packaging. Available in bulk with custom colors.'
+    },
+    'wooden-hanger': {
+      title: 'Wooden Hanger',
+      image: 'images/wooden-hanger.jpg',
+      price: '$2.50 / piece',
+      description: 'Natural wood hangers with non-slip coating, eco-friendly and premium feel. Perfect for high-end apparel brands.'
+    },
+    'vase': {
+      title: 'Decorative Vase',
+      image: 'images/vase.jpg',
+      price: '$8.99 / piece',
+      description: 'Elegant ceramic vase for living room decoration. Handcrafted with smooth glaze finish. Suitable for home or gift use.'
+    }
+  };
+
+  // URL 参数获取
+  function getUrlParam(name) {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get(name);
+  }
+
+  // 渲染详情页
+  function showProductDetail(id) {
+    const product = products[id];
+    if (!product) return;
+
+    document.getElementById('product-list').style.display = 'none';
+    const detailDiv = document.getElementById('product-detail');
+    detailDiv.style.display = 'block';
+
+    detailDiv.querySelector('#detail-content').innerHTML = `
+      <h1>${product.title}</h1>
+      <img src="${product.image}" alt="${product.title}" class="detail-img">
+      <p><strong>Price:</strong> ${product.price}</p>
+      <p>${product.description}</p>
+      <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=YOUR_BUTTON_ID" 
+         class="pay-button" target="_blank">Pay with PayPal</a>
+      <p><em>Or contact us for bank transfer options.</em></p>
+    `;
+  }
+
+  // 分类筛选（简化版）
+  document.querySelectorAll('.category-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.category-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      // 实际项目可加筛选逻辑，此处略
+    });
+  });
+
+  // 页面加载时检查是否查看详情
+  const productId = getUrlParam('id');
+  if (productId && products[productId]) {
+    showProductDetail(productId);
+  }
+</script>
+
+</body>
+</html>
