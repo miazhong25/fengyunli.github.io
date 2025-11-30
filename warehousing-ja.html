@@ -3,169 +3,85 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FENGYUNLI | 倉庫保管・集荷発送サービス</title>
-  <style>
-    /* 同上，略 */
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: 'Hiragino Sans', 'Meiryo', sans-serif;
-      line-height: 1.6;
-      color: #333;
-      background: #f9f9f9;
-    }
-    header {
-      background: black;
-      color: white;
-      padding: 1rem 2rem;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-    nav ul {
-      display: flex;
-      list-style: none;
-      gap: 2rem;
-    }
-    nav a {
-      text-decoration: none;
-      color: white;
-      font-weight: 500;
-    }
-    .container {
-      max-width: 1200px;
-      margin: 2rem auto;
-      padding: 0 1.5rem;
-    }
-    h1, h2 {
-      margin-bottom: 1.5rem;
-      color: #000;
-    }
-    .section {
-      margin-bottom: 3rem;
-    }
-    .image-wrapper {
-      width: 100%;
-      height: 400px;
-      object-fit: cover;
-      margin-bottom: 1.5rem;
-      background: #eee;
-    }
-    .text-content {
-      padding: 1.5rem;
-      background: white;
-      border-radius: 8px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    }
-    .flow-steps {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-      margin: 1.5rem 0;
-    }
-    .step {
-      flex: 1;
-      min-width: 200px;
-      padding: 1rem;
-      background: #f0f0f0;
-      border-radius: 8px;
-      text-align: center;
-    }
-    .step h3 {
-      margin-bottom: 0.5rem;
-    }
-    footer {
-      text-align: center;
-      padding: 1.5rem;
-      background: #000;
-      color: #aaa;
-      font-size: 0.9rem;
-    }
-  </style>
+  <meta name="description" content="FENGYUNLI 工場 – 中国・東莞市にある倉庫サービス。在庫保管、FBAラベル貼付、複数商品の統合発送、国際配送をワンストップで提供。" />
+  <title>FENGYUNLI | 倉庫保管サービス</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<header>
-  <nav>
-    <div class="logo">
+  <!-- Navigation (FULL version, consistent with index.html) -->
+  <nav class="navbar">
+    <div class="container">
       <a href="index.html" class="logo">FENGYUNLI</a>
+      <ul class="nav-menu">
+        <li><a href="products-ja.html">製品</a></li>
+        <li><a href="sourcing-ja.html">調達サービス</a></li>
+        <li><a href="warehousing-ja.html">倉庫保管</a></li>
+        <li><a href="about-ja.html">会社概要</a></li>
+        <li><a href="contact-ja.html">お問い合わせ</a></li>
+        <li><a href="en.html" class="lang-switch">English</a></li>
+      </ul>
     </div>
-    <ul class="nav-menu">
-      <li><a href="products-ja.html">製品</a></li>
-      <li><a href="sourcing-ja.html">調達サービス</a></li>
-      <li><a href="warehousing-ja.html">倉庫・集荷</a></li>
-      <li><a href="about-ja.html">会社概要</a></li>
-      <li><a href="contact-ja.html">お問い合わせ</a></li>
-      <li><a href="index.html" class="lang-switch">English</a></li>
-    </ul>
   </nav>
-</header>
 
-<div class="container">
-  <h1>倉庫保管・集荷発送サービス</h1>
+  <!-- Main Content -->
+  <main class="about-page">
+    <div class="container">
+      <h1>倉庫保管サービス</h1>
+      
+      <p>当社の倉庫は、中国・広東省東莞市橋頭鎮に位置しており、深セン港まで車で約1時間、広州白雲国際空港まで約1.5時間という物流に最適な立地です。これにより、迅速かつ低コストな国際配送が可能になります。</p>
 
-  <div class="section">
-    <img src="images/warehouse.jpg" alt="倉庫" class="image-wrapper">
-    <div class="text-content">
-      <h2>複数のサプライヤーから少量ずつ発送する場合、送料が高額になります</h2>
-      <p>当社の倉庫にすべての商品を一括で集荷していただき、まとめて海外へ発送することで、国際送料を最大50％削減できます。</p>
+      <!-- Insert image: warehouse interior -->
+      <div style="text-align: center; margin: 2rem 0;">
+        <img src="images/warehouse-interior.jpg" alt="倉庫内部" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+      </div>
+
+      <h2>提供サービス</h2>
+      <p>・<strong>安全な保管：</strong>整理整頓された屋内倉庫で商品を管理。</p>
+      <p>・<strong>在庫管理：</strong>リアルタイムで在庫数量を把握可能。</p>
+      <p>・<strong>FBAラベル貼付：</strong>Amazonの規定に準拠したバーコード印刷・貼付。</p>
+      <p>・<strong>再梱包・キット化：</strong>お客様の要望に応じたカスタム包装に対応。</p>
+      <p>・<strong>複数商品の統合発送：</strong>異なる工場からの商品を1つのコンテナに集約。</p>
+      <p>・<strong>国際配送：</strong>海運・航空便・陸送で世界中へ発送可能。</p>
+
+      <!-- Optional second image: labeling or packing -->
+      <div style="text-align: center; margin: 2rem 0;">
+        <img src="images/fba-labeling.jpg" alt="FBAラベル貼付作業" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+      </div>
+
+      <p>複数のサプライヤーから当社倉庫に商品を集めて統合発送することで、個別発送と比べて国際送料を最大40％削減できます。煩雑な物流業務をすべてお任せください。</p>
+    </div>
+  </main>
+
+  <!-- Scan to Connect Section (EXACTLY as in about-en.html) -->
+  <div style="text-align: center; margin: 30px 0; padding: 20px; background-color: #f9f9f9; border-radius: 8px;">
+    <h3 style="color: #333;">QRコードでつながる</h3>
+    <div style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 40px; margin-top: 20px;">
+      <!-- WeChat QR -->
+      <div style="text-align: center;">
+        <img src="images/wechat_qr.png" alt="WeChat QRコード" width="150" height="150" style="border: 1px solid #ddd; border-radius: 8px;">
+        <p style="margin: 10px 0; font-size: 14px;"><strong>WeChat</strong><br>WeChatで追加</p>
+      </div>
+
+      <!-- WhatsApp QR -->
+      <div style="text-align: center;">
+        <img src="images/whatsapp_qr.png" alt="WhatsApp QRコード" width="150" height="150" style="border: 1px solid #ddd; border-radius: 8px;">
+        <p style="margin: 10px 0; font-size: 14px;"><strong>WhatsApp</strong><br>WhatsAppで追加</p>
+      </div>
+    </div>
+
+    <div style="margin-top: 20px; text-align: center; font-size: 14px; color: #666;">
+      <p>QRコードをスキャンして、輸出担当者とつながり、お問い合わせを開始してください。</p>
     </div>
   </div>
 
-  <div class="section">
-    <h2>サービスフロー</h2>
-    <div class="flow-steps">
-      <div class="step">
-        <h3>1. 商品受取</h3>
-        <p>サプライヤーが直接当社倉庫へ発送</p>
-      </div>
-      <div class="step">
-        <h3>2. 保管</h3>
-        <p>ご指定日まで安全保管</p>
-      </div>
-      <div class="step">
-        <h3>3. 再梱包</h3>
-        <p>再梱包・ラベリング・仕分け対応</p>
-      </div>
-      <div class="step">
-        <h3>4. 発送</h3>
-        <p>お客様の指定フォワーダーにて出荷</p>
-      </div>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 FENGYUNLI. All rights reserved.</p>
     </div>
-  </div>
+  </footer>
 
-  <div class="section">
-    <h2>料金</h2>
-    <p><strong>保管：</strong>0.50ドル／立方メートル／月<br>
-       <strong>集荷：</strong>10ドル／出荷（最低1CBM）<br>
-       <strong>ラベリング：</strong>0.10ドル／個</p>
-    <p>Amazon FBA用ラベリングやバーコード印刷も承ります。</p>
-  </div>
-</div>
-
-<footer>
-  © 2025 FENGYUNLI. All rights reserved.
-</footer>
-  <!-- スキャンして連絡ください -->
-<div style="text-align: center; margin: 30px 0; padding: 20px; background-color: #f9f9f9; border-radius: 8px;">
-  <h3 style="color: #333;">スキャンして連絡ください</h3>
-  <div style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 40px; margin-top: 20px;">
-    <!-- WeChat QR -->
-    <div style="text-align: center;">
-      <img src="images/wechat_qr.png" alt="WeChat QRコード" width="150" height="150" style="border: 1px solid #ddd; border-radius: 8px;">
-      <p style="margin: 10px 0; font-size: 14px;"><strong>WeChat</strong><br>ウィーチャットでご連絡ください</p>
-    </div>
-
-    <!-- WhatsApp QR -->
-    <div style="text-align: center;">
-      <img src="images/whatsapp_qr.png" alt="WhatsApp QRコード" width="150" height="150" style="border: 1px solid #ddd; border-radius: 8px;">
-      <p style="margin: 10px 0; font-size: 14px;"><strong>WhatsApp</strong><br>WhatsAppでご連絡ください</p>
-    </div>
-  </div>
-
-  <div style="margin-top: 20px; text-align: center; font-size: 14px; color: #666;">
-    <p>QRコードをスキャンすると、当社の輸出担当者と直接やり取りできます。</p>
-    <p>お気軽にお問い合わせください。</p>
-  </div>
-</div>
 </body>
 </html>
