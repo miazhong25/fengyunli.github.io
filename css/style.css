@@ -95,7 +95,7 @@ body {
 }
 
 .hero h1 {
-  font-size: 3.2rem; /* 基础大小 */
+  font-size: 2.5rem; /* 基础大小 */
   font-weight: 700;
   margin-bottom: 1.2rem;
   line-height: 1.4;
@@ -104,20 +104,20 @@ body {
 
 /* 专门放大第一行 */
 .hero h1 .highlight {
-  font-size: 3.8rem; /* 比基础大一点 */
+  font-size: 2.9rem; /* 比基础大一点 */
   font-weight: 700;
   display: block; /* 确保它是一个独立块 */
 }
 
 .hero p {
-  font-size: 1rem;
+  font-size: 1.5rem;
   margin-bottom: 2rem;
   opacity: 0.9;
 }
 
 .cta-buttons {
   display: flex;
-  gap: 1.2rem;
+  gap: 1.5rem;
   justify-content: center;
   flex-wrap: wrap;
 }
