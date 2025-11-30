@@ -95,14 +95,14 @@ body {
 }
 
 .hero h1 {
-  font-size: 3.2rem;
+  font-size: 2.2rem;
   font-weight: 700;
   margin-bottom: 1.2rem;
   line-height: 1.6;
 }
 
 .hero p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-bottom: 2rem;
   opacity: 0.9;
 }
