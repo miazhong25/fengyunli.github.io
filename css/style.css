@@ -197,3 +197,14 @@ main p {
   margin-bottom: 1.5rem;
   line-height: 1.8;
 }
+/* Responsive adjustments for mobile devices */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+    line-height: 1.3;
+  }
+  .hero p {
+    font-size: 1.1rem;
+    padding: 0 1rem;
+  }
+}
