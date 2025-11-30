@@ -3,169 +3,85 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FENGYUNLI | Product Sourcing Services</title>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      line-height: 1.6;
-      color: #333;
-      background: #f9f9f9;
-    }
-    header {
-      background: black;
-      color: white;
-      padding: 1rem 2rem;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-    nav ul {
-      display: flex;
-      list-style: none;
-      gap: 2rem;
-    }
-    nav a {
-      text-decoration: none;
-      color: white;
-      font-weight: 500;
-    }
-    .container {
-      max-width: 1200px;
-      margin: 2rem auto;
-      padding: 0 1.5rem;
-    }
-    h1, h2 {
-      margin-bottom: 1.5rem;
-      color: #000;
-    }
-    .section {
-      margin-bottom: 3rem;
-    }
-    .image-wrapper {
-      width: 100%;
-      height: 400px;
-      object-fit: cover;
-      margin-bottom: 1.5rem;
-      background: #eee;
-    }
-    .text-content {
-      padding: 1.5rem;
-      background: white;
-      border-radius: 8px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    }
-    .pricing {
-      display: flex;
-      justify-content: space-around;
-      margin: 2rem 0;
-    }
-    .price-card {
-      text-align: center;
-      padding: 1rem;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      flex: 1;
-      margin: 0 1rem;
-    }
-    .price-card h3 {
-      margin-bottom: 0.5rem;
-    }
-    footer {
-      text-align: center;
-      padding: 1.5rem;
-      background: #000;
-      color: #aaa;
-      font-size: 0.9rem;
-    }
-  </style>
+  <meta name="description" content="FENGYUNLI Factory – Professional sourcing services from Dongguan, China. We help you find, verify, and manage suppliers for your products." />
+  <title>FENGYUNLI | Sourcing Services</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<header>
-  <nav>
-    <div class="logo">
+  <!-- Navigation (FULL version, consistent with index.html) -->
+  <nav class="navbar">
+    <div class="container">
       <a href="index.html" class="logo">FENGYUNLI</a>
-    </div>
-    <ul class="nav-menu">
-      <li><a href="products-en.html">Products</a></li>
-      <li><a href="sourcing-en.html">Sourcing</a></li>
-      <li><a href="warehousing-en.html">Warehousing</a></li>
-      <li><a href="about-en.html">About</a></li>
-      <li><a href="contact-en.html">Contact</a></li>
-      <li><a href="ja.html" class="lang-switch">Japanese</a></li>
-    </ul>
-  </nav>
-</header>
-
-<div class="container">
-  <h1>Product Sourcing from China</h1>
-
-  <div class="section">
-    <img src="images/sourcing-process.jpg" alt="Sourcing Process" class="image-wrapper">
-    <div class="text-content">
-      <h2>How We Help You Source Products</h2>
-      <p>We connect you with verified suppliers across Guangdong Province—China’s manufacturing and logistics hub. Whether you're sourcing clothes hangers, home goods, or custom items, we handle the entire process:</p>
-      <ul style="margin: 1rem 0;">
-        <li>🔍 Find reliable suppliers based on your needs</li>
-        <li>📦 Sample ordering and quality inspection</li>
-        <li>💰 Price negotiation and bulk purchase</li>
-        <li>🚚 Delivery to our warehouse for consolidation</li>
+      <ul class="nav-menu">
+        <li><a href="products-en.html">Products</a></li>
+        <li><a href="sourcing-en.html">Sourcing</a></li>
+        <li><a href="warehousing-en.html">Warehousing</a></li>
+        <li><a href="about-en.html">About</a></li>
+        <li><a href="contact-en.html">Contact</a></li>
+        <li><a href="ja.html" class="lang-switch">Japanese</a></li>
       </ul>
-      <p>Our team speaks English and Chinese, ensuring smooth communication and fast response.</p>
     </div>
-  </div>
+  </nav>
 
-  <div class="section">
-    <h2>Pricing & Service Fee</h2>
-    <div class="pricing">
-      <div class="price-card">
-        <h3>Basic Sourcing</h3>
-        <p>$50 per order</p>
-        <p>For orders under $500</p>
+  <!-- Main Content -->
+  <main class="about-page">
+    <div class="container">
+      <h1>Sourcing Services</h1>
+      
+      <p>We assist international buyers in sourcing high-quality products directly from verified factories in China. Whether you're an Amazon seller, e-commerce brand, or retail business, we act as your trusted local partner on the ground.</p>
+
+      <!-- Insert image: e.g., factory audit, product samples, etc. -->
+      <div style="text-align: center; margin: 2rem 0;">
+        <img src="images/sourcing-process.jpg" alt="Sourcing Process" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
       </div>
-      <div class="price-card">
-        <h3>Standard Sourcing</h3>
-        <p>$100 per order</p>
-        <p>For orders $500–$2000</p>
+
+      <h2>Our Sourcing Process</h2>
+      <p>· <strong>Requirement Analysis:</strong> Understand your product specs, target price, and quality standards.</p>
+      <p>· <strong>Supplier Matching:</strong> Identify and shortlist reliable factories based on your criteria.</p>
+      <p>· <strong>Factory Audit:</strong> Conduct on-site visits to verify production capacity and compliance.</p>
+      <p>· <strong>Sample Coordination:</strong> Arrange sample production and shipping for your approval.</p>
+      <p>· <strong>Production Monitoring:</strong> Track manufacturing progress and perform pre-shipment inspections.</p>
+      <p>· <strong>Logistics Integration:</strong> Coordinate with our warehousing team for labeling, consolidation, and shipping.</p>
+
+      <!-- Optional second image -->
+      <div style="text-align: center; margin: 2rem 0;">
+        <img src="images/factory-inspection.jpg" alt="Factory Inspection" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
       </div>
-      <div class="price-card">
-        <h3>Enterprise Sourcing</h3>
-        <p>Custom quote</p>
-        <p>For large volume or long-term cooperation</p>
+
+      <p>By leveraging our deep local network and industry expertise, we ensure you get the best value, quality, and service—without the language barrier or time zone challenges.</p>
+    </div>
+  </main>
+
+  <!-- Scan to Connect Section (EXACTLY as in about-en.html) -->
+  <div style="text-align: center; margin: 30px 0; padding: 20px; background-color: #f9f9f9; border-radius: 8px;">
+    <h3 style="color: #333;">Scan to Connect</h3>
+    <div style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 40px; margin-top: 20px;">
+      <!-- WeChat QR -->
+      <div style="text-align: center;">
+        <img src="images/wechat_qr.png" alt="WeChat QR Code" width="150" height="150" style="border: 1px solid #ddd; border-radius: 8px;">
+        <p style="margin: 10px 0; font-size: 14px;"><strong>WeChat</strong><br>Add us on WeChat</p>
+      </div>
+
+      <!-- WhatsApp QR -->
+      <div style="text-align: center;">
+        <img src="images/whatsapp_qr.png" alt="WhatsApp QR Code" width="150" height="150" style="border: 1px solid #ddd; border-radius: 8px;">
+        <p style="margin: 10px 0; font-size: 14px;"><strong>WhatsApp</strong><br>Add us on WhatsApp</p>
       </div>
     </div>
-  </div>
 
-  <div class="section">
-    <h2>Why Choose Us?</h2>
-    <p>With 12 years of experience in Taobao and B2B trade, we understand what international buyers need: quality, speed, and transparency. We provide full documentation, photos, and videos before shipment.</p>
-  </div>
-</div>
-
-<footer>
-  © 2025 FENGYUNLI. All rights reserved.
-</footer>
-<!-- Scan to Connect Section -->
-<div style="text-align: center; margin: 30px 0; padding: 20px; background-color: #f9f9f9; border-radius: 8px;">
-  <h3 style="color: #333;">Scan to Connect</h3>
-  <div style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 40px; margin-top: 20px;">
-    <!-- WeChat QR -->
-    <div style="text-align: center;">
-      <img src="images/wechat_qr.png" alt="WeChat QR Code" width="150" height="150" style="border: 1px solid #ddd; border-radius: 8px;">
-      <p style="margin: 10px 0; font-size: 14px;"><strong>WeChat</strong><br>Add us on WeChat</p>
-    </div>
-
-    <!-- WhatsApp QR -->
-    <div style="text-align: center;">
-      <img src="images/whatsapp_qr.png" alt="WhatsApp QR Code" width="150" height="150" style="border: 1px solid #ddd; border-radius: 8px;">
-      <p style="margin: 10px 0; font-size: 14px;"><strong>WhatsApp</strong><br>Add us on WhatsApp</p>
+    <div style="margin-top: 20px; text-align: center; font-size: 14px; color: #666;">
+      <p>Simply scan the QR code to add our export manager and start your inquiry.</p>
     </div>
   </div>
 
-  <div style="margin-top: 20px; text-align: center; font-size: 14px; color: #666;">
-    <p>Simply scan the QR code to add our export manager and start your inquiry.</p>
-  </div>
-</div>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 FENGYUNLI. All rights reserved.</p>
+    </div>
+  </footer>
+
 </body>
 </html>
