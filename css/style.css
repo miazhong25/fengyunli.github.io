@@ -74,17 +74,9 @@ body {
   text-align: center;
   color: white;
   position: relative;
-}
-overflow: hidden; /* 防止图片溢出 */
+  overflow: hidden; /* 防止图片溢出 */
 }
 
-/* 添加黑色半透明遮罩层，提升文字对比度 */
-.hero::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
 .hero::before {
   content: '';
   position: absolute;
@@ -199,6 +191,7 @@ overflow: hidden; /* 防止图片溢出 */
   padding: 1.5rem 0;
   text-align: center;
 }
+
 /* 新增：增加主内容区段落间距 */
 main p {
   margin-bottom: 1.5rem;
