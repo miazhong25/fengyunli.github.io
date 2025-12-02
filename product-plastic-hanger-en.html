@@ -8,12 +8,12 @@
   <link rel="stylesheet" href="css/style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
-    /* 新增样式：优化图片尺寸 */
+    /* 新增样式：优化布局 */
     .product-header {
       display: flex;
       gap: 2rem;
       margin: 1.5rem 0;
-      align-items: flex-start;
+      align-items: flex-start; /* ← 关键：顶部对齐 */
     }
 
     .product-info {
@@ -26,7 +26,7 @@
     .main-image {
       flex: 1;
       min-width: 300px;
-      max-width: none; /* 关键：允许主图变大 */
+      max-width: none;
     }
 
     .main-img {
@@ -46,8 +46,8 @@
 
     .sub-img {
       flex: 1;
-      max-height: 250px; /* 增加高度，确保完整显示 */
-      object-fit: cover; /* 防止变形 */
+      max-height: 300px; /* ← 增加到 300px，避免裁剪 */
+      object-fit: contain; /* ← 改为 contain，保证完整显示 */
       border-radius: 8px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
@@ -56,9 +56,6 @@
       .product-header,
       .product-sub-images {
         flex-direction: column;
-      }
-      .main-image {
-        max-width: none;
       }
     }
   </style>
