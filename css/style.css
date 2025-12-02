@@ -297,23 +297,24 @@ main p {
 /* =============== Optimized Product Gallery =============== */
 .product-gallery {
   display: flex;
-  gap: 24px;
-  margin: 2rem 0;
+  gap: 20px; /* 减小间距，腾出更多空间 */
+  margin: 2.5rem 0;
   justify-content: center;
   flex-wrap: wrap;
 }
 
 .gallery-img {
-  width: 300px;
-  height: 200px;
+  width: 360px;       /* ← 增大宽度 */
+  height: 240px;      /* ← 按 3:2 比例调整高度 */
   object-fit: cover;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease;
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .gallery-img:hover {
-  transform: scale(1.03);
+  transform: scale(1.02);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
 }
 
 /* =============== Optimized Video Section (16:9) =============== */
