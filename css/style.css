@@ -254,7 +254,7 @@ main p {
 .product-card img {
   width: 100%;
   height: 150px;
-  object-fit: cover;
+  object-fit: cover; /* 保持比例，填充容器 */
   border-radius: 6px;
   margin-bottom: 1rem;
 }
