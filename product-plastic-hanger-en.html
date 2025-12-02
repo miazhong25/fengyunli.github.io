@@ -7,6 +7,61 @@
   <title>Plastic Hanger – FENGYUNLI</title>
   <link rel="stylesheet" href="css/style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* 新增样式：仅用于本页面布局优化 */
+    .product-header {
+      display: flex;
+      gap: 2rem;
+      margin: 1.5rem 0;
+      align-items: flex-start;
+    }
+
+    .product-info {
+      flex: 1;
+      min-width: 300px;
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    .main-image {
+      flex: 1;
+      min-width: 300px;
+      max-width: 400px; /* 控制主图不要太大 */
+    }
+
+    .main-img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .product-sub-images {
+      display: flex;
+      gap: 1.2rem;
+      margin: 1.5rem 0;
+      width: 100%;
+    }
+
+    .sub-img {
+      flex: 1;
+      height: auto;
+      max-height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    @media (max-width: 768px) {
+      .product-header,
+      .product-sub-images {
+        flex-direction: column;
+      }
+      .main-image {
+        max-width: none;
+      }
+    }
+  </style>
 </head>
 <body>
 
@@ -30,27 +85,31 @@
     <div class="container">
       <h1>Plastic Clothes Hanger</h1>
 
-      <p>-- Product No: PH-01</p>
+      <div class="product-header">
+        <div class="product-info">
+          <p><strong>-- Product No: PH-01</strong></p>
+          <p>
+            <strong>Available in stock:</strong><br>
+            Kids size (30 cm): White / Black<br>
+            Adult size (42 cm): White / Black<br>
+            Other colors are available upon request.<br>
+            Please contact our sales team for details.
+          </p>
+          <p>
+            <strong>EXW Price:</strong><br>
+            0.09 USD per 1 pcs<br>
+            Contact us for volume pricing.
+          </p>
+        </div>
+        <div class="main-image">
+          <img src="images/Plastic-Hanger-PH01-1.jpg" alt="Front View" class="main-img">
+        </div>
+      </div>
 
-      <p>
-        <strong>Available in stock:</strong><br>
-        Kids size (30 cm): White / Black<br>
-        Adult size (42 cm): White / Black<br>
-        Other colors are available upon request.<br>
-        Please contact our sales team for details.
-      </p>
-
-      <p>
-        <strong>EXW Price:</strong><br>
-        0.09 USD per 1 pcs<br>
-        Contact us for volume pricing.
-      </p>
-
-      <!-- Product Images Gallery -->
-      <div class="product-gallery">
-        <img src="images/Plastic-Hanger-PH01-1.jpg" alt="Front View" class="gallery-img">
-        <img src="images/Plastic-Hanger-PH01-2.jpg" alt="Side View" class="gallery-img">
-        <img src="images/Plastic-Hanger-PH01-3.jpg" alt="Packaging" class="gallery-img">
+      <!-- 下方两图 -->
+      <div class="product-sub-images">
+        <img src="images/Plastic-Hanger-PH01-2.jpg" alt="Side View" class="sub-img">
+        <img src="images/Plastic-Hanger-PH01-3.jpg" alt="Packaging" class="sub-img">
       </div>
 
       <!-- Video + Specifications Side by Side -->
