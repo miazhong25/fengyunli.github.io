@@ -353,3 +353,23 @@ main p {
   object-fit: cover;
   background: #000;
 }
+/* =============== Product Detail Layout: Video + Specs Side by Side =============== */
+.product-detail-layout {
+  display: flex;
+  gap: 2rem;
+  margin: 2.5rem 0;
+  align-items: flex-start; /* ← 关键：顶部对齐 */
+}
+
+.video-wrapper,
+.specifications {
+  flex: 1;
+  min-width: 300px;
+}
+
+/* Responsive: Stack on mobile */
+@media (max-width: 768px) {
+  .product-detail-layout {
+    flex-direction: column;
+  }
+}
