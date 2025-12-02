@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
-    /* 新增样式：仅用于本页面布局优化 */
+    /* 新增样式：优化图片尺寸 */
     .product-header {
       display: flex;
       gap: 2rem;
@@ -26,7 +26,7 @@
     .main-image {
       flex: 1;
       min-width: 300px;
-      max-width: 400px; /* 控制主图不要太大 */
+      max-width: none; /* 关键：允许主图变大 */
     }
 
     .main-img {
@@ -34,6 +34,7 @@
       height: auto;
       border-radius: 8px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      object-fit: cover;
     }
 
     .product-sub-images {
@@ -45,9 +46,8 @@
 
     .sub-img {
       flex: 1;
-      height: auto;
-      max-height: 200px;
-      object-fit: cover;
+      max-height: 250px; /* 增加高度，确保完整显示 */
+      object-fit: cover; /* 防止变形 */
       border-radius: 8px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
