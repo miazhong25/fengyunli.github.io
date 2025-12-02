@@ -290,6 +290,33 @@ main p {
   .product-grid { grid-template-columns: 1fr; }
 }
 /* Product Detail Page */
+/* Product Detail Page */
+.product-detail-page {
+  padding: 2rem 0;
+}
+
+/* ==================== Product Header Layout ==================== */
+.product-header {
+  display: flex;
+  align-items: flex-start; /* 关键：让图片和文字顶部对齐 */
+  gap: 2rem;
+}
+
+.product-info {
+  flex: 1;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.main-image {
+  flex-shrink: 0;
+}
+
+.main-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
 .product-detail-page {
   padding: 2rem 0;
 }
