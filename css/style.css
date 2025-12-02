@@ -289,3 +289,52 @@ main p {
 @media (max-width: 600px) {
   .product-grid { grid-template-columns: 1fr; }
 }
+/* Product Detail Page */
+.product-detail-page {
+  padding: 2rem 0;
+}
+
+.product-gallery {
+  display: flex;
+  gap: 1rem;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+
+.product-gallery img {
+  max-width: 200px;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.video-section, .specifications, .payment-methods {
+  margin: 2.5rem 0;
+}
+
+.spec-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.spec-table td {
+  padding: 0.8rem 1rem;
+  border: 1px solid #eee;
+  vertical-align: top;
+}
+
+.spec-table td:first-child {
+  font-weight: 600;
+  background-color: #fafafa;
+  width: 30%;
+}
+
+.payment-badge {
+  background: #eef5ff;
+  color: #1976d2;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: 600;
+  border: 1px solid #cfe8ff;
+}
