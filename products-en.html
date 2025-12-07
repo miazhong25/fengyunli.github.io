@@ -5,13 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="FENGYUNLI – Professional manufacturer of high-quality clothes hangers and home furnishings in Dongguan, China." />
   <title>FENGYUNLI | Clothes Hangers & Home Furnishings</title>
-  <!-- ✅ 修正：CSS 文件名改为小写 style.css -->
+  <!-- ✅ 修正：CSS 文件名改为小写 style.css（原 Style.css 404） -->
   <link rel="stylesheet" href="/css/style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-  <!-- ✅ 临时内联关键样式：确保产品网格和导航基础样式 -->
+  <!-- ✅ 关键布局兜底样式（确保导航和产品网格正常显示） -->
   <style>
-    /* 确保 navbar 显示 */
+    /* 导航栏基础样式 */
     .navbar {
       display: flex;
       justify-content: space-between;
@@ -42,7 +42,7 @@
       font-weight: 500;
     }
 
-    /* 产品网格：一行4列（桌面端） */
+    /* 产品网格：桌面端一行4个，响应式 */
     .product-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
@@ -80,7 +80,6 @@
       font-weight: 600;
     }
 
-    /* 容器宽度限制 */
     .container {
       width: 90%;
       max-width: 1200px;
@@ -88,13 +87,13 @@
       padding: 0 1rem;
     }
 
-    /* 响应式：移动端单列 */
+    /* 移动端简化处理 */
     @media (max-width: 768px) {
+      .nav-menu {
+        display: none;
+      }
       .product-grid {
         grid-template-columns: 1fr;
-      }
-      .nav-menu {
-        display: none; /* 简化：移动端隐藏菜单（你可后续加汉堡菜单） */
       }
     }
   </style>
@@ -126,7 +125,6 @@
       <section class="product-category">
         <h2>Plastic Hangers</h2>
         <div class="product-grid">
-          <!-- 已移除多余 </a>，保留16个产品（示例只列前3个，其余结构相同） -->
           <a href="/product-ph01-en.html" class="product-card">
             <img src="/images/PH01-1.png" alt="Plastic Clothes Hanger">
             <h3>Plastic Hanger PH01</h3>
@@ -145,8 +143,78 @@
             <p>44.5 CM</p>
             <p class="price">From $0.15 / piece</p>
           </a>
-          <!-- ... 其余产品保持相同结构（确保无多余 </a>）... -->
-          <!-- 为节省篇幅，此处省略中间产品，实际使用时请保留全部 -->
+          <a href="/product-Plastic-hanger-ph04-en.html" class="product-card">
+            <img src="/images/Plastic-Hanger-PH04-1.jpg" alt="Plastic Hanger PH04">
+            <h3>Plastic Hanger PH04</h3>
+            <p>39 CM</p>
+            <p class="price">From $0.17 / piece</p>
+          </a>
+          <a href="/product-Plastic-hanger-ph05-en.html" class="product-card">
+            <img src="/images/Plastic-Hanger-PH05-1.jpg" alt="Plastic Hanger PH05">
+            <h3>Plastic Hanger PH05</h3>
+            <p>39.5CM    Heart shape   7 Colors</p>
+            <p class="price">From $0.09 / piece</p>
+          </a>
+          <a href="/product-ph06-en.html" class="product-card">
+            <img src="/images/PH06-1.png" alt="Plastic Hanger PH06">
+            <h3>Plastic Hanger PH06</h3>
+            <p>39.5CM    Bow shape   7 Colors</p>
+            <p class="price">From $0.09 / piece</p>
+          </a>
+          <a href="/product-ph07-en.html" class="product-card">
+            <img src="/images/PH07-1.png" alt="Plastic Clothes Hanger">
+            <h3>Plastic Hanger PH07</h3>
+            <p>30/40CM</p>
+            <p class="price">From <strong>$0.09 / piece</strong></p>
+          </a>
+          <a href="/product-ph08-en.html" class="product-card">
+            <img src="/images/PH08-1.png" alt="Plastic Clothes Hanger">
+            <h3>Plastic Hanger PH08</h3>
+            <p>42CM</p>
+            <p class="price">From <strong>$0.09 / piece</strong></p>
+          </a>
+          <a href="/product-ph09-en.html" class="product-card">
+            <img src="/images/PH09-1.png" alt="Plastic Clothes Hanger">
+            <h3>Plastic Hanger PH09</h3>
+            <p>39.5 CM with shiny electroplated coating</p>
+            <p class="price">From <strong>$0.16 / piece</strong></p>
+          </a>
+          <a href="/product-ph10-en.html" class="product-card">
+            <img src="/images/PH10-1.png" alt="Plastic Clothes Hanger">
+            <h3>Plastic Hanger PH10</h3>
+            <p>39.5 CM with shiny electroplated coating</p>
+            <p class="price">From <strong>$0.16 / piece</strong></p>
+          </a>
+          <a href="/product-ph11-en.html" class="product-card">
+            <img src="/images/PH11-1.png" alt="Plastic Clothes Hanger">
+            <h3>Plastic Hanger PH11</h3>
+            <p>Children's size: 33 CM<br>Adult size: 41 CM</p>
+            <p class="price">From <strong>$0.16 / piece</strong></p>
+          </a>
+          <a href="/product-ph12-en.html" class="product-card">
+            <img src="/images/PH12-1.png" alt="Plastic Clothes Hanger">
+            <h3>Plastic Hanger PH12</h3>
+            <p>Children's size: 33 CM<br>Adult size: 41 CM</p>
+            <p class="price">From <strong>$0.16 / piece</strong></p>
+          </a>
+          <a href="/product-ph13-en.html" class="product-card">
+            <img src="/images/PH13-1.png" alt="Plastic Clothes Hanger">
+            <h3>Plastic Hanger PH13</h3>
+            <p>42 CM</p>
+            <p class="price">From <strong>$0.075 / piece</strong></p>
+          </a>
+          <a href="/product-ph14-en.html" class="product-card">
+            <img src="/images/PH14-1.png" alt="Plastic Clothes Hanger">
+            <h3>Plastic Hanger PH14</h3>
+            <p>40 CM   Four parts are detachable</p>
+            <p class="price">From <strong>$0.16 / piece</strong></p>
+          </a>
+          <a href="/product-ph15-en.html" class="product-card">
+            <img src="/images/PH15-1.png" alt="Plastic Clothes Hanger">
+            <h3>Plastic Hanger PH15</h3>
+            <p>28 CM For Baby Clothes</p>
+            <p class="price">From <strong>$0.07 / piece</strong></p>
+          </a>
           <a href="/product-ph16-en.html" class="product-card">
             <img src="/images/PH16-1.png" alt="Plastic Clothes Hanger">
             <h3>Plastic Hanger PH16</h3>
@@ -163,23 +231,67 @@
           <a href="/product-VH01-en.html" class="product-card">
             <img src="/images/VH01-1.png" alt="Velvet Clothes Hanger">
             <h3>Velvet Hanger VH01</h3>
-            <p>30/33/42/45 CM Non-slip velvet surface</p>
+            <p>30/33/42/45 CM  Non-slip velvet surface</p>
             <p class="price">From <strong>$0.10 / piece</strong></p>
           </a>
-          <!-- ... 其他 Velvet 产品 ... -->
+          <a href="/product-VH02-en.html" class="product-card">
+            <img src="/images/VH02-1.png" alt="Velvet Clothes Hanger">
+            <h3>Velvet Hanger VH02</h3>
+            <p>37/42/45 CM  Non-slip velvet surface</p>
+            <p class="price">From <strong>$0.10 / piece</strong></p>
+          </a>
+          <a href="/product-VH03-en.html" class="product-card">
+            <img src="/images/VH03-1.png" alt="Velvet Clothes Hanger">
+            <h3>Velvet Hanger VH03</h3>
+            <p>42/45 CM  Non-slip velvet surface</p>
+            <p class="price">From <strong>$0.12 / piece</strong></p>
+          </a>
+          <a href="/product-VH04-en.html" class="product-card">
+            <img src="/images/VH04-1.png" alt="Velvet Clothes Hanger">
+            <h3>Velvet Hanger VH04</h3>
+            <p>42 CM  Heart Shape With Non-slip velvet surface</p>
+            <p class="price">From <strong>$0.10 / piece</strong></p>
+          </a>
+          <a href="/product-VH05-en.html" class="product-card">
+            <img src="/images/VH05-1.png" alt="Velvet Clothes Hanger">
+            <h3>Velvet Hanger VH05</h3>
+            <p>42 CM  Bow Shape With Non-slip velvet surface</p>
+            <p class="price">From <strong>$0.11 / piece</strong></p>
+          </a>
+          <a href="/product-VH06-en.html" class="product-card">
+            <img src="/images/VH06-1.png" alt="Velvet Trousers Hanger">
+            <h3>Velvet Hanger VH06</h3>
+            <p>42 CM  Velvet Trousers Hangers with Adjustable Clips</p>
+            <p class="price">From <strong>$0.30 / piece</strong></p>
+          </a>
+          <a href="/product-VH07-en.html" class="product-card">
+            <img src="/images/VH07-1.png" alt="Velvet Clothes Hanger">
+            <h3>Velvet Hanger VH07</h3>
+            <p>42 CM  Non-slip velvet surface</p>
+            <p class="price">From <strong>$0.11 / piece</strong></p>
+          </a>
+          <a href="/product-VH08-en.html" class="product-card">
+            <img src="/images/VH08-1.png" alt="Velvet Pants Hanger">
+            <h3>Velvet Hanger VH08</h3>
+            <p>35 CM  Pants Hanger With Non-slip velvet surface</p>
+            <p class="price">From <strong>$0.11 / piece</strong></p>
+          </a>
+          <a href="/product-VH09-en.html" class="product-card">
+            <img src="/images/VH09-1.png" alt="Velvet Clothes Hanger">
+            <h3>Velvet Hanger VH09</h3>
+            <p>30/45 CM  Non-slip velvet surface</p>
+            <p class="price">From <strong>$0.15 / piece</strong></p>
+          </a>
           <a href="/product-VH10-en.html" class="product-card">
             <img src="/images/VH10-1.png" alt="Short-neck Velvet Hanger">
             <h3>Velvet Hanger VH10</h3>
-            <p>41.5×15.5 CM Short-neck hanger design saves vertical space</p>
+            <p>41.5×15.5 CM  Short-neck hanger design saves vertical space</p>
             <p class="price">From <strong>$0.11 / piece</strong></p>
           </a>
         </div>
       </section>
 
-      <!-- 其他分类（Stainless Steel, Wooden 等）结构相同，确保每个 .product-grid 内部是干净的 <a> 卡片 -->
-      <!-- 此处为简洁省略，实际代码中保留原有结构，仅修正路径和标签 -->
-
-      <!-- 示例：Stainless Steel Hangers -->
+      <!-- Stainless Steel Hangers -->
       <section class="product-category">
         <h2>Stainless Steel Hangers</h2>
         <div class="product-grid">
@@ -189,7 +301,24 @@
             <p>201/304 Stainless 32/35/40/42/45/50 CM</p>
             <p class="price">From <strong>$0.11 / piece</strong></p>
           </a>
-          <!-- ... 其他产品 ... -->
+          <a href="/product-SH02-en.html" class="product-card">
+            <img src="/images/SH02-1.png" alt="Stainless Steel Hanger">
+            <h3>Stainless Steel Hanger SH02</h3>
+            <p>201 Stainless 42/45/50/70/85/95/105/120 CM</p>
+            <p class="price">From <strong>$0.20 / piece</strong></p>
+          </a>
+          <a href="/product-SH03-en.html" class="product-card">
+            <img src="/images/SH03-1.png" alt="Stainless Steel Hanger">
+            <h3>Stainless Steel Hanger SH03</h3>
+            <p>201/304 Stainless 35/40/42/45/50 CM</p>
+            <p class="price">From <strong>$0.37 / piece</strong></p>
+          </a>
+          <a href="/product-SH04-en.html" class="product-card">
+            <img src="/images/SH04-1.png" alt="Stainless Steel Hanger">
+            <h3>Stainless Steel Hanger SH04</h3>
+            <p>201 Stainless 40.5 CM</p>
+            <p class="price">From <strong>$0.25 / piece</strong></p>
+          </a>
         </div>
       </section>
 
@@ -212,7 +341,63 @@
         </div>
       </section>
 
-      <!-- 其他分类略（Aluminum, Coated, Accessories, Home Furnishings） -->
+      <!-- Aluminum Hangers -->
+      <section class="product-category">
+        <h2>Aluminum Hangers</h2>
+        <div class="product-grid">
+          <a href="/product-aluminum-hanger-en.html" class="product-card">
+            <img src="/images/Aluminum-Hanger.jpg" alt="Aluminum Hanger">
+            <h3>Aluminum Hanger</h3>
+            <p>Lightweight yet Strong, modern finish, anti-corrosion.</p>
+            <p class="price">From <strong>$2.90 / piece</strong></p>
+          </a>
+        </div>
+      </section>
+
+      <!-- Coated (Dipped) Hangers -->
+      <section class="product-category">
+        <h2>Coated Hangers</h2>
+        <div class="product-grid">
+          <a href="/product-coated-hanger-en.html" class="product-card">
+            <img src="/images/Coated-Hanger.jpg" alt="PVC Coated Hanger">
+            <h3>PVC Coated Hanger</h3>
+            <p>Soft-touch coating prevents garment slipping and damage.</p>
+            <p class="price">From <strong>$1.60 / piece</strong></p>
+          </a>
+        </div>
+      </section>
+
+      <!-- Hanger Accessories -->
+      <section class="product-category">
+        <h2>Hanger Accessories</h2>
+        <div class="product-grid">
+          <a href="/product-hanger-accessories-en.html" class="product-card">
+            <img src="/images/Hanger-Clips.jpg" alt="Hanger Clips & Hooks">
+            <h3>Hanger Clips & Hooks</h3>
+            <p>Replacement clips, hooks, and extenders for all hanger types.</p>
+            <p class="price">From <strong>$0.30 / piece</strong></p>
+          </a>
+        </div>
+      </section>
+
+      <!-- Other Home Furnishings -->
+      <section class="product-category">
+        <h2>Other Home Furnishings</h2>
+        <div class="product-grid">
+          <a href="/product-vase-en.html" class="product-card">
+            <img src="/images/Decorative-Vase.jpg" alt="Ceramic Decorative Vase">
+            <h3>Decorative Vase</h3>
+            <p>Handcrafted ceramic vase with modern minimalist design.</p>
+            <p class="price">From <strong>$8.99 / piece</strong></p>
+          </a>
+          <a href="/product-bedding-en.html" class="product-card">
+            <img src="/images/Cotton-Bedding.jpg" alt="Cotton Bedding Set">
+            <h3>Cotton Bedding Set</h3>
+            <p>100% cotton, breathable and soft. Multiple colors available.</p>
+            <p class="price">From <strong>$15.00 / set</strong></p>
+          </a>
+        </div>
+      </section>
 
       <p style="text-align: center; margin-top: 2rem; font-style: italic;">
         📦 Minimum order quantity (MOQ): 500 pieces per item<br>
