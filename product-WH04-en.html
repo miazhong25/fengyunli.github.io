@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="FENGYUNLI – Premium Stainless Clothes Hanger with customization options." />
+  <title>Stainless Hanger – FENGYUNLI</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* 新增样式：优化布局 */
+    .product-header {
+      display: flex;
+      gap: 2rem;
+      margin: 1.5rem 0;
+      align-items: flex-start; /* ← 关键：顶部对齐 */
+    }
+
+    .product-info {
+      flex: 1;
+      min-width: 300px;
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    .main-image {
+      flex: 1;
+      min-width: 300px;
+      max-width: none;
+    }
+
+    .main-img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      object-fit: cover;
+    }
+
+    .product-sub-images {
+      display: flex;
+      gap: 1.2rem;
+      margin: 1.5rem 0;
+      width: 100%;
+    }
+
+    .sub-img {
+      flex: 1;
+      max-height: 300px; /* ← 增加到 300px，避免裁剪 */
+      object-fit: contain; /* ← 改为 contain，保证完整显示 */
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    @media (max-width: 768px) {
+      .product-header,
+      .product-sub-images {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">FENGYUNLI</a>
+      <ul class="nav-menu">
+        <li><a href="products-en.html">Products</a></li>
+        <li><a href="sourcing-en.html">Sourcing</a></li>
+        <li><a href="warehousing-en.html">Warehousing</a></li>
+        <li><a href="about-en.html">About</a></li>
+        <li><a href="contact-en.html">Contact</a></li>
+        <li><a href="ja.html" class="lang-switch">Japanese</a></li>
+      </ul>
+    </div>
+  </nav>
+
+<main class="product-detail-page">
+  <div class="container">
+    <h1>Stainless Clothes Hanger</h1>
+
+    <div class="product-layout">
+      <!-- 左侧：文字 -->
+      <div class="product-text">
+        <p><strong>-- Product No: WH04</strong></p>
+        <p>
+          <strong>Available in stock:</strong><br>
+         30/38/42/44.5 CM CM<br>
+          <br>
+          Custom colors, sizes, and logos are available. Please contact our sales team for details.
+        </p>
+        <p>
+          <strong>EXW Price:</strong><br>
+          From 0.22 USD per 1 pcs<br>
+          Contact us for volume pricing.
+        </p>
+
+        <section class="specifications">
+          <h2>Product Details</h2>
+          <table class="spec-table">
+            <tr><td>PRODUCT NO：</td><td>FENGYUNLI WH04</td></tr>
+            <tr><td>Material：</td><td>Wood</td></tr>
+            <tr><td>Size:</td><td>11.81"/14.96"/16.54"/17.52" (30/38/42/44.5 CM)    Other sizes can be customized.</td></tr>
+            <tr><td>Color Options：</td><td>Natural wood color/brown/black/white/pink/gold/antique color and other colors that can be spray-painted.</td></tr>
+            <tr><td>MOQ：</td><td>1 pieces</td></tr>
+            <tr><td>Packing：</td><td>50 pcs / carton</td></tr>
+            <tr><td>Shipping Method：</td><td>Sea / Air / Express (DHL, FedEx)<br>
+                                     Available for customer pickup at our warehouse.</td></tr>
+          </table>
+        </section>
+
+        <section class="payment-methods">
+          <h2>Accepted Payment Methods</h2>
+          <div class="payment-badges">
+            <span class="payment-badge">International Bank Transfer</span>
+            <span class="payment-badge">PayPal</span>
+            <span class="payment-badge">PingPong (Credit Card Supported)</span>
+            <span class="payment-badge">Other (Negotiable)</span>
+          </div>
+        </section>
+      </div>
+
+      <!-- 右侧：三图 + 视频 -->
+      <div class="product-media">
+        <div class="media-item">
+          <img src="images/WH04-1.png" alt="Front View" class="media-img">
+        </div>
+        <div class="media-item">
+          <img src="images/WH04-2.png" alt="Side View" class="media-img">
+        </div>
+        <div class="media-item">
+          <img src="images/WH04-3.png" alt="Packaging" class="media-img">
+        </div>
+        <div class="media-item video-wrapper">
+          <h2>Production Process</h2>
+          <div class="aspect-ratio-box">
+            <video controls>
+              <source src="videos/Stainless-hanger-production.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+  <!-- Scan to Connect Section -->
+  <div style="text-align: center; margin: 30px 0; padding: 20px; background-color: #f9f9f9; border-radius: 8px;">
+    <h3 style="color: #333;">Scan to Connect</h3>
+    <div style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 40px; margin-top: 20px;">
+      <div style="text-align: center;">
+        <img src="images/wechat_qr.png" alt="WeChat QR Code" width="150" height="150" style="border: 1px solid #ddd; border-radius: 8px;">
+        <p style="margin: 10px 0; font-size: 14px;"><strong>WeChat</strong><br>Add us on WeChat</p>
+      </div>
+      <div style="text-align: center;">
+        <img src="images/instagram_qr.png" alt="Instagram QR Code" width="150" height="150" style="border: 1px solid #ddd; border-radius: 8px;">
+        <p style="margin: 10px 0; font-size: 14px;"><strong>Instagram</strong><br>Follow us on Instagram</p>
+      </div>
+      <div style="text-align: center;">
+        <img src="images/whatsapp_qr.png" alt="WhatsApp QR Code" width="150" height="150" style="border: 1px solid #ddd; border-radius: 8px;">
+        <p style="margin: 10px 0; font-size: 14px;"><strong>WhatsApp</strong><br>Add us on WhatsApp</p>
+      </div>
+    </div>
+    <div style="margin-top: 20px; text-align: center; font-size: 14px; color: #666;">
+      <p>Simply scan the QR code to add our export manager and start your inquiry.</p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 FENGYUNLI. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
