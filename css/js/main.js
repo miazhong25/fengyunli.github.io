@@ -1,4 +1,3 @@
-// 手机菜单切换 & 轮播图 & 产品分页
 document.addEventListener('DOMContentLoaded', () => {
   // === 手机菜单 ===
   const hamburger = document.querySelector('.hamburger');
@@ -38,12 +37,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // === 产品分页功能 ===
   const productCategories = document.querySelectorAll('.product-category');
-  if (productCategories.length === 0) return; // 不是产品页，退出
+  if (productCategories.length === 0) return; // 如果没有找到任何产品分类，则退出
 
   let currentPage = 1;
   const totalPages = 2;
 
-  // 🔴【关键】先定义函数，再调用！
   function showProductPage(page) {
     currentPage = page;
 
@@ -73,7 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // ✅ 现在安全调用（函数已定义）
+  // 初始化第一页
   showProductPage(1);
 
   // 绑定分页按钮（事件委托）
