@@ -221,7 +221,7 @@ main p {
 }
 /* Product Page Styles */
 .product-category {
-  margin: 3rem 0;
+  margin-bottom: 0; /* 修改后的样式 */
 }
 
 .product-category h2 {
