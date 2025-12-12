@@ -3,59 +3,81 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="FENGYUNLI – Multi-functional velvet hanger VH06 with built-in trouser bar and colored metal hooks (silver, gold, pink). Anti-slip flocked surface, 16.5 in size, available in 12+ colors. MOQ 10 pcs. Custom packaging available." />
+  <meta name="description" content="FENGYUNLI – Multi-function velvet hanger VH06 with built-in trouser bar and colored metal hooks (silver, gold, pink). Anti-slip flocked surface, 16.5 in size, available in 12+ colors. MOQ 10 pcs." />
   <title>Multi-Function Velvet Hanger – VH06 | FENGYUNLI</title>
   <link rel="stylesheet" href="css/style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
-    /* 主产品布局 */
-    .product-layout {
+    /* 参照 PH13 的布局样式 */
+    .product-header {
       display: flex;
-      gap: 2.5rem;
-      margin-top: 1.5rem;
+      gap: 2rem;
+      margin: 1.5rem 0;
+      align-items: flex-start;
     }
 
-    .product-text {
+    .product-info {
       flex: 1;
       min-width: 300px;
       font-size: 0.95rem;
       line-height: 1.6;
     }
 
-    .product-media {
+    .main-image {
       flex: 1;
       min-width: 300px;
-      display: flex;
-      flex-direction: column;
-      gap: 1.2rem;
+      max-width: none;
     }
 
-    .media-img,
-    .product-media video {
+    .main-img {
       width: 100%;
       height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      object-fit: cover;
+    }
+
+    .product-sub-images {
+      display: flex;
+      gap: 1.2rem;
+      margin: 1.5rem 0;
+      width: 100%;
+    }
+
+    .sub-img {
+      flex: 1;
+      max-height: 300px;
+      object-fit: contain;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .video-container {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .video-container h3 {
+      margin-bottom: 0.8rem;
+      font-size: 1rem;
+      text-align: center;
+      font-weight: 600;
+      color: #333;
+    }
+
+    .video-container video {
+      width: 100%;
+      height: auto;
+      max-height: 300px;
       border-radius: 8px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
       object-fit: contain;
     }
 
-    .aspect-ratio-box {
-      position: relative;
-      width: 100%;
-      padding-bottom: 56.25%; /* 16:9 */
-    }
-
-    .aspect-ratio-box video {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      border-radius: 8px;
-    }
-
     @media (max-width: 768px) {
-      .product-layout {
+      .product-header,
+      .product-sub-images {
         flex-direction: column;
       }
     }
@@ -78,76 +100,68 @@
     </div>
   </nav>
 
-<main class="product-detail-page">
-  <div class="container">
-    <h1>Multi-Function Velvet Hanger – VH06</h1>
+  <main class="product-detail-page">
+    <div class="container">
+      <h1>Multi-Function Velvet Hanger – VH06</h1>
 
-    <div class="product-layout">
-      <!-- 左侧：文字 -->
-      <div class="product-text">
-        <p><strong>-- Product No.: VH06</strong></p>
-        <p>
-          <strong>Description:</strong><br>
-          This all-in-one hanger features a soft flocked surface for slip resistance and a sturdy lower metal bar for hanging trousers or skirts.<br>
-          One hanger = complete outfit organization.<br>
-          Metal hooks are available in silver, gold, or pink (MOQ applies for colored hooks).
-        </p>
+      <div class="product-header">
+        <div class="product-info">
+          <p><strong>-- Product No.: VH06</strong></p>
+          <p>
+            <strong>Description:</strong><br>
+            This all-in-one hanger features a soft flocked surface for slip resistance and a sturdy lower metal bar for hanging trousers or skirts.<br>
+            One hanger = complete outfit organization.<br>
+            Metal hooks are available in silver, gold, or pink (MOQ applies for colored hooks).
+          </p>
 
-        <p>
-          <strong>EXW Price:</strong><br>
-          <span style="color: #d32f2f; font-weight: 600;">USD 0.30 per piece</span><br>
-          <em>Smart design for space-saving wardrobe solutions.</em><br>
-          Contact us for samples or bulk pricing.
-        </p>
+          <p>
+            <strong>EXW Price:</strong><br>
+            <span style="color: #d32f2f; font-weight: 600;">USD 0.30 per piece</span><br>
+            Contact us for volume pricing.
+          </p>
 
-        <section class="specifications">
-          <h2>Product Details</h2>
-          <table class="spec-table">
-            <tr><td>PRODUCT NO.：</td><td>FENGYUNLI VH06</td></tr>
-            <tr><td>Material：</td><td>Plastic core with nylon flocking and metal hook/bar</td></tr>
-            <tr><td>Size:</td><td>16.5 in (42 cm)</td></tr>
-            <tr><td>Color Options：</td><td>Black, grey, purple, white, pink, beige, brown, green, blue, red, yellow, orange, or custom Pantone colors</td></tr>
-            <tr><td>MOQ：</td><td>10 pieces</td></tr>
-            <tr><td>Packing：</td><td>120 pcs / carton; custom-branded packaging available</td></tr>
-            <tr><td>Shipping Method：</td><td>Sea / Air / Express (DHL, FedEx)<br>Available for customer pickup at our warehouse.</td></tr>
-          </table>
-        </section>
+          <section class="specifications">
+            <h2>Product Details</h2>
+            <table class="spec-table">
+              <tr><td>PRODUCT NO.：</td><td>FENGYUNLI VH06</td></tr>
+              <tr><td>Material：</td><td>Plastic core with nylon flocking and metal hook/bar</td></tr>
+              <tr><td>Size:</td><td>16.5 in (42 cm)</td></tr>
+              <tr><td>Color Options：</td><td>Black, grey, purple, white, pink, beige, brown, green, blue, red, yellow, orange, or custom Pantone colors</td></tr>
+              <tr><td>MOQ：</td><td>10 pieces</td></tr>
+              <tr><td>Packing：</td><td>120 pcs / carton; custom-branded packaging available</td></tr>
+              <tr><td>Shipping Method：</td><td>Sea / Air / Express (DHL, FedEx)<br>Available for customer pickup at our warehouse.</td></tr>
+            </table>
+          </section>
 
-        <section class="payment-methods">
-          <h2>Accepted Payment Methods</h2>
-          <div class="payment-badges">
-            <span class="payment-badge">International Bank Transfer</span>
-            <span class="payment-badge">PayPal</span>
-            <span class="payment-badge">PingPong (Credit Card Supported)</span>
-            <span class="payment-badge">Other (Negotiable)</span>
-          </div>
-        </section>
+          <section class="payment-methods">
+            <h2>Accepted Payment Methods</h2>
+            <div class="payment-badges">
+              <span class="payment-badge">International Bank Transfer</span>
+              <span class="payment-badge">PayPal</span>
+              <span class="payment-badge">PingPong (Credit Card Supported)</span>
+              <span class="payment-badge">Other (Negotiable)</span>
+            </div>
+          </section>
+        </div>
+
+        <div class="main-image">
+          <img src="images/VH06-1.png" alt="Front View – Multi-Function Velvet Hanger with Trouser Bar" class="main-img">
+        </div>
       </div>
 
-      <!-- 右侧：三图 + 视频 -->
-      <div class="product-media">
-        <div class="media-item">
-          <img src="images/VH06-1.png" alt="Front View – Multi-Function Velvet Hanger with Trouser Bar" class="media-img">
-        </div>
-        <div class="media-item">
-          <img src="images/VH06-2.png" alt="Side View – Showing Metal Hook and Lower Bar" class="media-img">
-        </div>
-        <div class="media-item">
-          <img src="images/VH06-3.png" alt="Custom Packaging – Branded Box Option" class="media-img">
-        </div>
-        <div class="media-item video-wrapper">
-          <h2>Production Process</h2>
-          <div class="aspect-ratio-box">
-            <video controls>
-              <source src="videos/Velvet-hanger-production.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-          </div>
+      <div class="product-sub-images">
+        <img src="images/VH06-2.png" alt="Side View – Showing Metal Hook and Lower Bar" class="sub-img">
+        <img src="images/VH06-3.png" alt="Custom Packaging – Branded Box Option" class="sub-img">
+        <div class="video-container">
+          <h3>Production Process</h3>
+          <video controls>
+            <source src="videos/Velvet-hanger-production.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
         </div>
       </div>
     </div>
-  </div>
-</main>
+  </main>
 
   <!-- Scan to Connect Section -->
   <div style="text-align: center; margin: 30px 0; padding: 20px; background-color: #f9f9f9; border-radius: 8px;">
