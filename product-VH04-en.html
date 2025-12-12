@@ -3,58 +3,59 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="FENGYUNLI – Premium Velvet Clothes Hanger with customization options." />
-  <title>Velvet Hanger – FENGYUNLI</title>
+  <meta name="description" content="FENGYUNLI – Heart-shaped velvet hanger VH04 for kids and women. Anti-slip flocked surface, available in black, grey, purple, white, pink, beige, red, green, blue, yellow, brown, khaki or custom colors. Sizes: 36 cm (kids) / 42 cm (adults). MOQ 10 pcs." />
+  <title>Heart-Shaped Velvet Hanger – VH04 | FENGYUNLI</title>
   <link rel="stylesheet" href="css/style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
-    /* 新增样式：优化布局 */
-    .product-header {
+    /* 主产品布局 */
+    .product-layout {
       display: flex;
-      gap: 2rem;
-      margin: 1.5rem 0;
-      align-items: flex-start; /* ← 关键：顶部对齐 */
+      gap: 2.5rem;
+      margin-top: 1.5rem;
     }
 
-    .product-info {
+    .product-text {
       flex: 1;
       min-width: 300px;
       font-size: 0.95rem;
       line-height: 1.6;
     }
 
-    .main-image {
+    .product-media {
       flex: 1;
       min-width: 300px;
-      max-width: none;
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
     }
 
-    .main-img {
+    .media-img,
+    .product-media video {
       width: 100%;
       height: auto;
       border-radius: 8px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      object-fit: cover;
+      object-fit: contain;
     }
 
-    .product-sub-images {
-      display: flex;
-      gap: 1.2rem;
-      margin: 1.5rem 0;
+    .aspect-ratio-box {
+      position: relative;
       width: 100%;
+      padding-bottom: 56.25%; /* 16:9 */
     }
 
-    .sub-img {
-      flex: 1;
-      max-height: 300px; /* ← 增加到 300px，避免裁剪 */
-      object-fit: contain; /* ← 改为 contain，保证完整显示 */
+    .aspect-ratio-box video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
       border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
 
     @media (max-width: 768px) {
-      .product-header,
-      .product-sub-images {
+      .product-layout {
         flex-direction: column;
       }
     }
@@ -79,36 +80,35 @@
 
 <main class="product-detail-page">
   <div class="container">
-    <h1>Velvet Clothes Hanger</h1>
+    <h1>Heart-Shaped Velvet Hanger – VH04</h1>
 
     <div class="product-layout">
       <!-- 左侧：文字 -->
       <div class="product-text">
-        <p><strong>-- Product No: VH04</strong></p>
+        <p><strong>-- Product No.: VH04</strong></p>
         <p>
-          <strong>Available in stock:</strong><br>
-         The flocked surface of the hanger provides excellent anti-slip properties.
-
-The heart shape is more suitable for children's or women's wardrobe organization.<br>
-          
+          <strong>Description:</strong><br>
+          The heart-shaped design adds a charming touch to children’s and women’s wardrobes.<br>
+          Its flocked velvet surface ensures excellent anti-slip performance, preventing garments from slipping off.
         </p>
+
         <p>
           <strong>EXW Price:</strong><br>
-          0.11 USD per 1 pcs<br>
-          Contact us for volume pricing.
+          <span style="color: #d32f2f; font-weight: 600;">USD 0.11 per piece</span><br>
+          <em>Stylish design meets practical function at an affordable price.</em><br>
+          Contact us for samples or bulk discounts.
         </p>
 
         <section class="specifications">
           <h2>Product Details</h2>
           <table class="spec-table">
-            <tr><td>PRODUCT NO：</td><td>  FENGYUNLI VH04</td></tr>
-            <tr><td>Material：</td><td>Plastic, Nylon Flocking, Metal Hook</td></tr>
-            <tr><td>Size:</td><td>Kids: 14.2"（36cm) Adults: 16.5"（42 cm）</td></tr>
-            <tr><td>Color Options：</td><td>Black/grey/purple/white/pink/beige/red/green/blue/yellow/brown/khaki，Custom colors are available.</td></tr>
+            <tr><td>PRODUCT NO.：</td><td>FENGYUNLI VH04</td></tr>
+            <tr><td>Material：</td><td>Plastic core with nylon flocking and metal hook</td></tr>
+            <tr><td>Size:</td><td>Kids: 14.2 in (36 cm) / Adults: 16.5 in (42 cm)</td></tr>
+            <tr><td>Color Options：</td><td>Black, grey, purple, white, pink, beige, red, green, blue, yellow, brown, khaki, or custom Pantone colors</td></tr>
             <tr><td>MOQ：</td><td>10 pieces</td></tr>
             <tr><td>Packing：</td><td>120 pcs / carton</td></tr>
-            <tr><td>Shipping Method：</td><td>Sea / Air / Express (DHL, FedEx)<br>
-                                     Available for customer pickup at our warehouse.</td></tr>
+            <tr><td>Shipping Method：</td><td>Sea / Air / Express (DHL, FedEx)<br>Available for customer pickup at our warehouse.</td></tr>
           </table>
         </section>
 
@@ -126,13 +126,13 @@ The heart shape is more suitable for children's or women's wardrobe organization
       <!-- 右侧：三图 + 视频 -->
       <div class="product-media">
         <div class="media-item">
-          <img src="images/VH04-1.png" alt="Front View" class="media-img">
+          <img src="images/VH04-1.png" alt="Front View – Heart-Shaped Velvet Hanger" class="media-img">
         </div>
         <div class="media-item">
-          <img src="images/VH04-2.png" alt="Side View" class="media-img">
+          <img src="images/VH04-2.png" alt="Side Profile – Contoured Heart Design" class="media-img">
         </div>
         <div class="media-item">
-          <img src="images/VH04-3.png" alt="Packaging" class="media-img">
+          <img src="images/VH04-3.png" alt="Bulk Packaging – 120 pcs per Carton" class="media-img">
         </div>
         <div class="media-item video-wrapper">
           <h2>Production Process</h2>
