@@ -620,3 +620,99 @@ main p {
   font-weight: 500;
   color: #333;
 }
+/* ====================== MOBILE-FIRST FIXES (DO NOT AFFECT DESKTOP) ====================== */
+
+/* 防止任何横向溢出（安全兜底） */
+html, body {
+  overflow-x: hidden;
+}
+
+/* 容器在小屏进一步收缩 */
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+    padding: 0 10px;
+  }
+
+  /* 导航栏：堆叠或缩小间距 */
+  .navbar .container {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .nav-menu {
+    gap: 1.2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .nav-menu a {
+    font-size: 0.9rem;
+    padding: 4px 8px;
+  }
+
+  /* Hero 区域：允许换行，降低高度，调整字体 */
+  .hero {
+    height: auto;
+    min-height: 60vh;
+    padding: 40px 0;
+  }
+  .hero h1 .highlight {
+    white-space: normal; /* ← 允许换行！关键修复 */
+    font-size: 2.2rem;
+    text-align: center;
+  }
+  .hero h1 {
+    font-size: 1.8rem;
+    line-height: 1.3;
+  }
+  .hero p {
+    font-size: 1.1rem;
+    padding: 0 10px;
+  }
+  .hero-content {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+
+  /* CTA 按钮垂直排列 */
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+  .btn {
+    width: 90%;
+    max-width: 300px;
+    text-align: center;
+  }
+
+  /* 分类卡片：确保单列 */
+  .categories {
+    grid-template-columns: 1fr !important;
+    padding: 30px 15px;
+  }
+  .category-card {
+    padding: 20px;
+  }
+
+  /* Footer 字体微调 */
+  .footer {
+    padding: 1rem 0;
+    font-size: 0.9rem;
+  }
+}
+
+/* 超小屏（iPhone SE 等）进一步优化 */
+@media (max-width: 480px) {
+  .hero h1 .highlight {
+    font-size: 1.8rem;
+  }
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+  .nav-menu a {
+    font-size: 0.85rem;
+  }
+}
